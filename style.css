@@ -1,10 +1,13 @@
   :root{
-    --blue:#0066FF;
-    --blue-light:#4D94FF;
-    --black:#0D1117;
-    --black-2:#131a24;
+    --blue:#1E56C5;
+    --blue-light:#39A8F5;
+    --blue-dark:#4F6DFF;
+    --black:#050608;
+    --black-2:#0D1117;
     --white:#FFFFFF;
-    --grey:#9BA7B4;
+    --grey:#A7B2C2;
+    --gradient:linear-gradient(135deg,#39A8F5,#1E56C5,#4F6DFF);
+    --shadow-blue:rgba(57,168,245,.35);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -69,7 +72,7 @@
     display:inline-flex;
     align-items:center;
     gap:8px;
-    background:var(--blue);
+    background:var(--gradient);
     color:var(--white);
     font-family:'Poppins',sans-serif;
     font-weight:600;
@@ -261,7 +264,7 @@
     flex-shrink:0;
     width:24px;height:24px;
     border-radius:50%;
-    background:var(--blue);
+    background:var(--gradient);
     display:flex;align-items:center;justify-content:center;
     margin-top:2px;
   }
@@ -280,7 +283,7 @@
   /* CTA */
   .cta{
     text-align:center;
-    background:linear-gradient(135deg, #0052cc, var(--blue));
+    background:var(--gradient);
     border-radius:16px;
     padding:70px 40px;
     margin:0 auto;
